@@ -18,5 +18,8 @@ class Migration(migrations.Migration):
                 ('firstname', models.CharField(max_length=60)),
                 ('lastname', models.CharField(max_length=60)),
             ],
+            options={
+                'db_table': 'artists',
+            },
         ),
     ]
